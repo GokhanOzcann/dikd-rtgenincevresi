@@ -108,7 +108,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(59, 279);
+            this.label3.Location = new System.Drawing.Point(87, 279);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 20);
             this.label3.TabIndex = 7;
@@ -117,18 +117,18 @@
             // 
             // sayi
             // 
-            this.sayi.Location = new System.Drawing.Point(165, 272);
+            this.sayi.Location = new System.Drawing.Point(196, 272);
             this.sayi.Name = "sayi";
             this.sayi.Size = new System.Drawing.Size(125, 27);
             this.sayi.TabIndex = 8;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(165, 330);
+            this.button2.Location = new System.Drawing.Point(196, 328);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 29);
             this.button2.TabIndex = 9;
-            this.button2.Text = "Bak bakalım";
+            this.button2.Text = "Tek, Çift??";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
