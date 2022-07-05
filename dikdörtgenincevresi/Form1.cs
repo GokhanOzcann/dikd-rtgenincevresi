@@ -9,12 +9,15 @@ namespace dikdörtgenincevresi
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {   //Değişkenleri tanımla
             int kisa_kenar, uzun_kenar, alan,cevre;
+            //Textbox olduğu için integere dönüştür.
             kisa_kenar = Convert.ToInt32(kisa.Text);
                 uzun_kenar = Convert.ToInt32(uzun.Text);
+            // alan ve çevreyi matematiksel formüle dönüştür.
             alan = kisa_kenar * uzun_kenar;
             cevre = 2 * (kisa_kenar + uzun_kenar);
+            //radiobuttonlara göre koşul yarat
             if (radioButton1.Checked == true)
                 MessageBox.Show("Dikdötgenin Alanı:" + " " + alan.ToString() + " " + "cm2dir."
                     );
