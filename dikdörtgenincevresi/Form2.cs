@@ -19,10 +19,10 @@ namespace dikdörtgenincevresi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            decimal birinci, ikinci,ucuncu;
+            decimal birinci, ikinci;
             birinci = Convert.ToInt32(textBox1.Text);
             ikinci = Convert.ToInt32(textBox2.Text);
-            ucuncu = (birinci + ikinci)/2;
+            
             if (birinci > 100 || ikinci > 100)
             {
                 MessageBox.Show("Not girişleri 100 den büyük olamaz.");
@@ -30,12 +30,14 @@ namespace dikdörtgenincevresi
             else
             {
                 MessageBox.Show("Not ortalaması başarıyla hesaplandı ve listeye eklendi.");
-                listBox1.Items.Add(ucuncu
-                );
+                listBox1.Items.Add(not_ortala(birinci,ikinci));
             }
             
         }
-
+        public decimal not_ortala(decimal birinci, decimal ikinci)
+        {
+            return (birinci + ikinci) / 2;
+        }
 
     }
     }
