@@ -35,6 +35,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.sayi = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // kisa
@@ -102,12 +105,42 @@
             this.radioButton2.Text = "Çevre";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(59, 279);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 20);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Sayı Giriniz:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // sayi
+            // 
+            this.sayi.Location = new System.Drawing.Point(165, 272);
+            this.sayi.Name = "sayi";
+            this.sayi.Size = new System.Drawing.Size(125, 27);
+            this.sayi.TabIndex = 8;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(165, 330);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(94, 29);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Bak bakalım";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.sayi);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.button1);
@@ -131,5 +164,8 @@
         private Button button1;
         private RadioButton radioButton1;
         private RadioButton radioButton2;
+        private Label label3;
+        private TextBox sayi;
+        private Button button2;
     }
 }

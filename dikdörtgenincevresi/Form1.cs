@@ -30,5 +30,22 @@ namespace dikdörtgenincevresi
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int sayi_gir;
+            sayi_gir = Convert.ToInt32(sayi.Text);
+            if ( sayi_gir %2 == 0 )
+            { MessageBox.Show("Girdiğiniz sayı çifttir."); }
+            else
+            {
+                MessageBox.Show("Girdiğiniz sayı tektir.");
+            }
+        }
     }
 }
